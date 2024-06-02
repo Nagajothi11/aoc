@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gridItems {
+    font-family: "Open Sans", sans-serif;
+}
+
+.gridItems .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    max-width: 100%;
+    height: 100vh
+}
+
+.gridItems .row {
+    display: flex;
+    padding: 0 0 0 25px;
+}
+
+.gridItems .partition-left {
+    text-align: left;
+    align-self: center;
+    width: 70%;
+    padding: 0 10px
+}
+
+.gridItems .partition-right {
+    align-self: center;
+    padding: 0 10px
+}
+
+.gridItems .col {
+    padding: 40px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.gridItems .img-res1 {
+    width: 35%;
+}
+
+.gridItems .img-res {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: absolute;
+    width: 5%;
+    margin: 20px;
+}
+
+.gridItems h6 {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin: 10px 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: solid 4px #fff;
+}
+
+.gridItems p {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.gridItems .green {
+    background-color: #41CA6E;
+}
+
+.gridItems .orange {
+    background-color: #FAB153;
+}
+
+.gridItems .purple {
+    background-color: #7277D5;
+}
+
+.gridItems .red {
+    background-color: #F87D51;
+}
+
+.gridItems .pink {
+    background-color: #ED5466;
+}
+
+.gridItems .blue {
+    background-color: #4EC2E7;
+}
+
+
+.slider-wrapper {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .slider-wrapper {
+        display: block;
+
+    }
+
+    .col {
+        height: 100vh
+    }
+
+    .gridItems .container {
+        display: none;
+    }
+
+    .logo {
+        position: sticky;
+        width: 16%;
+        margin: 20px;
+        z-index: 1;
+        filter: invert(1);
+    }
+
+    .gridItems .row {
+        display: block;
+    }
+
+    .gridItems .partition-right {
+        margin: 40px 0 0 0;
+        width: 100%
+    }
+
+    .gridItems .partition-left {
+        width: 100%
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1028px) {
+    .gridItems .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gridItems h6 {
+        width: 100%;
+    }
+}
